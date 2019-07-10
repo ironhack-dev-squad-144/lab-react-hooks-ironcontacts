@@ -39,14 +39,25 @@ $ npm start
 
 Let's take a look at the starter code.
 
-Inside `src` folder, we can find `contacts.json`, a JSON file with the producer's contacts. Import this file and **create an array of the 5 first contacts** to use as your initial state.
+You have 2 main files:
+- `src/contacts.json`: a JSON file with the producer's contacts
+- `src/App.js`: The file for the App component. It's going to be the only component of our project.
 
-Display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
+Your task is to initialise the application by display the 5 first contacts of the list. You have to display that array of 5 contacts in a `<table>` and display the `picture`, `name`, and `popularity` of each contact.
 
 To import `contacts.json` in `App.js`, you can simply use:
 
 ```js
-import contacts from './contacts.json'
+import fullListOfContacts from './contacts.json'
+```
+
+And to initilalise the 5 first contacts:
+```js
+function App() {
+  // The initial state hook `contacts` is initialised with the 5 first elements of fullListOfContacts
+  const [contacts, setContacts] = useState(fullListOfContacts.slice(0,5));
+  // ...
+}
 ```
 
 At the end of this iteration, your application should look like this:
@@ -58,7 +69,7 @@ At the end of this iteration, your application should look like this:
 
 In your application, create a *Add Random Contact* button so that every time you click on this button, it adds a new random actor.
 
-First, randomly select a contact from the larger `contacts` array. Then add that contact to the array that lives in your state (that's the previously created array of 5). Don't forget to `setState()` to cause React to re-render the app.
+First, randomly select a contact from the larger `contacts` array. Then add that contact to the array that lives in your state (that's the previously created array of 5). Don't forget to `setContacts()` to cause React to re-render the app.
 
 At the end of this iteration, your website will probably look like this:
 
@@ -69,7 +80,7 @@ At the end of this iteration, your website will probably look like this:
 
 The producer asked you to add two new buttons to help them sort their contacts. When you click on one of the buttons, it should **sort the table by `name`** (alphabetically) and when you click the other, it should **sort by `popularity`** (highest first).
 
-Don't forget to `setState()` after you sort!
+Don't forget to `setContacts()` after you sort!
 
 This is what you may have at the end of this iteration:
 
