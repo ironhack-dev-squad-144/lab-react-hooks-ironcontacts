@@ -31,3 +31,53 @@
     transform: rotate(360deg);
   }
 }
+
+
+.img-celeb{
+  height: 20vh;
+}
+
+.contact-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 80vw;
+  margin: 2vh auto;
+}
+
+.infos{
+  display: flex;
+  flex-direction: column;
+ text-align: left;
+  justify-content: center;
+  margin-left: 2vw;
+}
+
+h1{
+  font-size:3rem;
+}
+
+h3{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+h2{
+  margin-right: 10vw;
+  font-weight: bold;
+}
+
+.header-container{
+  /* display: flex;
+  flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  margin-left:10vw;
+  margin-top: 10vh;
+}
+
+.delete-btn{
+  margin-top: 9vh;
+}  
