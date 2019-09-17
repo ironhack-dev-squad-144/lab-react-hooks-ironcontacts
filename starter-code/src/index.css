@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+img {
+  height: 100px;
+}
+
+th {
+  font-size: 2rem;
+}
+.tableContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.contactName {
+  font-weight: 800;
+}
