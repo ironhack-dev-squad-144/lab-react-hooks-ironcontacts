@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .App-logo {
@@ -30,4 +35,31 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.contactTable {
+  width: 30vw;
+}
+
+.contactTable td,
+.contactTable th {
+  width: 30%;
+  margin: 10px;
+}
+
+.contactTable th {
+  font-size: 20px;
+}
+
+.contactTable img {
+  width: 60%;
+}
+
+.buttons {
+  display: flex;
 }
